@@ -32,12 +32,14 @@ img {
 .content-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .item {
   display: flex;
   justify-content: space-around;
   margin: 25px;
+  flex-wrap: wrap;
 }
 
 .description {
