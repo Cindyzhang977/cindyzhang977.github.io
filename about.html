@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  <link rel="stylesheet"
+        type="text/css"
+        href="aboutStyle.css"/>
+  <link rel="stylesheet"
+        type="text/css"
+        href="indexStyle.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--navigation bar on top-->
+  <div class="nav-menu-container">
+    <div class="nav-menu">
+      <div class="nav-items">
+        <button class="button" id="name"><a href="index.html"> Cindy Zhang </a></button>
+      </div>
+      <div class="nav-items">
+        <button class="button"><a href="index.html"> Home </a></button>
+        <button class="button"><a href="resume.pdf"> Resume </a></button>
+        <button class="button"><a href="about.html"> About </a></button>
+      </div>
+    </div>
+  </div>
+
+  <!--content-->
+
+  <!--wushu-->
+  <div class="content-container">
+    <div class="item">
+      <div>
+        <div class="slideshow-container">
+          <div class="mySlides fade wushu-img">
+            <img src="imgs/calwushu.jpg">
+          </div>
+          <div class="mySlides fade wushu-img">
+            <img src="imgs/wushu-splits.jpg">
+          </div>
+          <div class="mySlides fade wushu-img">
+            <img src="imgs/wushu-empty.jpg">
+          </div>
+          <div class="mySlides fade wushu-img">
+            <img src="imgs/wushu-cross.jpg">
+          </div>
+          <a class="prev" onclick="wushuSlides.plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="wushuSlides.plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+          <span class="dot wushu-dot" onclick="wushuSlides.currentSlide(0)"></span>
+          <span class="dot wushu-dot" onclick="wushuSlides.currentSlide(1)"></span>
+          <span class="dot wushu-dot" onclick="wushuSlides.currentSlide(2)"></span>
+          <span class="dot wushu-dot" onclick="wushuSlides.currentSlide(3)"></span>
+        </div>
+      </div>
+
+      <div class="description">
+        <h>Wushu</h>
+        <p>
+          I started wushu (Chinese martial arts) when I was 8 most likely due to my mother's wishes
+          to disperse some of my energy elsewhere. Since then, wushu has been not only an outlet for
+          stress, but it has also given me a community of supportive and hilarious friends. I'm currently
+          an active member of Cal Wushu, where I've made many of my favorite memories and closest friends.
+        </p>
+      </div>
+    </div>
+
+    <!--traveling-->
+    <div class="item">
+      <div class="description">
+        <h>Traveling</h>
+        <p>
+          I love exploring new places. One of my favorite adventures was backpacking through Plumas National
+          Forest, where our surroundings actually matched the pictures on the packaging of our freeze dried
+          dinner. Even though my current college-student definition of traveling mainly involves visiting
+          nearby parks, I'm always eager to spend the day outside. I'm particularly obsessed with beach
+          trips and finding nice places to watch the sunset.
+        </p>
+      </div>
+
+      <div>
+        <div class="slideshow-container">
+          <div class="mySlides fade travel-img">
+            <img src="imgs/goldengate.jpg">
+          </div>
+          <div class="mySlides fade travel-img">
+            <img src="imgs/don-edwards.jpg">
+          </div>
+          <div class="mySlides fade travel-img">
+            <img src="imgs/shoreline.jpg">
+          </div>
+          <div class="mySlides fade travel-img">
+            <img src="imgs/plumas.jpg">
+          </div>
+          <div class="mySlides fade travel-img">
+            <img src="imgs/sunset-beach.jpg">
+          </div>
+          <div class="mySlides fade travel-img">
+            <img src="imgs/big-c.jpg">
+          </div>
+          <div class="mySlides fade travel-img">
+            <img src="imgs/devils-slide.jpg">
+          </div>
+          <div class="mySlides fade travel-img">
+            <img src="imgs/central-park.jpg">
+          </div>
+          <a class="prev" onclick="travelSlides.plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="travelSlides.plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+          <span class="dot travel-dot" onclick="travelSlides.currentSlide(0);"></span>
+          <span class="dot travel-dot" onclick="travelSlides.currentSlide(1);"></span>
+          <span class="dot travel-dot" onclick="travelSlides.currentSlide(2);"></span>
+          <span class="dot travel-dot" onclick="travelSlides.currentSlide(3);"></span>
+          <span class="dot travel-dot" onclick="travelSlides.currentSlide(4);"></span>
+          <span class="dot travel-dot" onclick="travelSlides.currentSlide(5);"></span>
+          <span class="dot travel-dot" onclick="travelSlides.currentSlide(6);"></span>
+          <span class="dot travel-dot" onclick="travelSlides.currentSlide(7);"></span>
+        </div>
+      </div>
+    </div>
+
+    <!--music-->
+    <div class="item">
+      <div>
+        <div class="slideshow-container">
+          <div class="mySlides fade music-img">
+            <img src="imgs/clarinets.jpg">
+          </div>
+          <div class="mySlides fade music-img">
+            <img src="imgs/band-playing.jpg">
+          </div>
+          <div class="mySlides fade music-img">
+            <img src="imgs/band4.jpg">
+          </div>
+          <div class="mySlides fade music-img">
+            <img src="imgs/clarinets-uniformed.jpg">
+          </div>
+          <a class="prev" onclick="musicSlides.plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="musicSlides.plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+          <span class="dot music-dot" onclick="musicSlides.currentSlide(0);"></span>
+          <span class="dot music-dot" onclick="musicSlides.currentSlide(1);"></span>
+          <span class="dot music-dot" onclick="musicSlides.currentSlide(2);"></span>
+          <span class="dot music-dot" onclick="musicSlides.currentSlide(3);"></span>
+        </div>
+      </div>
+
+      <div class="description">
+        <h>Music</h>
+        <p>
+          Music has always been a large part of my life, from playing piano to blasting songs in the car.
+          Throughout high school, I also played clarinet in the marching band. Now, I love singing random songs
+          with friends, whether that be late night karaoke with Spotify or jamming out during a road trip.
+        </p>
+      </div>
+    </div>
+
+  <footer><br></footer>
+
+  <script src="slideshow.js"></script>
+
+</body>
+</html>
