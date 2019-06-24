@@ -6,6 +6,9 @@
 
 body {
   background-color: white;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 * {
@@ -22,10 +25,6 @@ p {
 footer {
   background-color: var(--navbar-color);
   height: 25px;
-  /* position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%; */
 }
 
 /* top navigation bar */
@@ -97,6 +96,7 @@ a:hover {
   justify-content: space-between;
   margin: 25px;
   padding: 50px;
+  flex: 1;
 }
 
 
