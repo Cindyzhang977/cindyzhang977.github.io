@@ -33,34 +33,39 @@ class slideShow {
   }
 }
 
+function autoSlides(slides, slidesType) {
+  //play slides automatically when page loads, reset timer once user changes slides
+  var timer;
+  window.addEventListener("load", function(){
+    slides.showSlides(slides.currSlideIndex);
+    timer = setInterval(function(){slides.plusSlides(1)}, waitTime);
+  })
+
+  arrows = document.getElementsByClassName(slidesType + "-arrow");
+  for (var i = 0; i < arrows.length; i++) {
+    arrows[i].addEventListener("click", function(){
+    clearInterval(timer);
+    timer = setInterval(function(){slides.plusSlides(1)}, waitTime);
+    })
+  }
+}
+
 var waitTime = 7000;
 
 var wushuDots = document.getElementsByClassName("wushu-dot");
 var wushuImages = document.getElementsByClassName("wushu-img");
 const wushuSlides = new slideShow(wushuImages, wushuDots);
 wushuSlides.showSlides(0);
-var wushuTimer;
-window.addEventListener("load", function(){
-  wushuSlides.showSlides(wushuSlides.currSlideIndex);
-  wushuTimer = setInterval(function(){wushuSlides.plusSlides(1)}, waitTime);
-})
+autoSlides(wushuSlides, "wushu");
 
 var travelDots = document.getElementsByClassName("travel-dot");
 var travelImages = document.getElementsByClassName("travel-img");
 const travelSlides = new slideShow(travelImages, travelDots);
 travelSlides.showSlides(0);
-var travelTimer;
-window.addEventListener("load", function(){
-  travelSlides.showSlides(travelSlides.currSlideIndex);
-  travelTimer = setInterval(function(){travelSlides.plusSlides(1)}, waitTime);
-})
+autoSlides(travelSlides, "travel")
 
 var musicDots = document.getElementsByClassName("music-dot");
 var musicImages = document.getElementsByClassName("music-img");
 const musicSlides = new slideShow(musicImages, musicDots);
 musicSlides.showSlides(0);
-var musicTimer;
-window.addEventListener("load", function(){
-  musicSlides.showSlides(musicSlides.currSlideIndex);
-  musicTimer = setInterval(function(){musicSlides.plusSlides(1)}, waitTime);
-})
+autoSlides(musicSlides, "music");
