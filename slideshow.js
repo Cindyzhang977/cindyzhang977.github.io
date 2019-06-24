@@ -33,6 +33,8 @@ class slideShow {
   }
 }
 
+var waitTime = 7000;
+
 var wushuDots = document.getElementsByClassName("wushu-dot");
 var wushuImages = document.getElementsByClassName("wushu-img");
 const wushuSlides = new slideShow(wushuImages, wushuDots);
@@ -40,7 +42,7 @@ wushuSlides.showSlides(0);
 var wushuTimer;
 window.addEventListener("load", function(){
   wushuSlides.showSlides(wushuSlides.currSlideIndex);
-  wushuTimer = setInterval(function(){wushuSlides.plusSlides(1)}, 5000);
+  wushuTimer = setInterval(function(){wushuSlides.plusSlides(1)}, waitTime);
 })
 
 var travelDots = document.getElementsByClassName("travel-dot");
@@ -50,7 +52,7 @@ travelSlides.showSlides(0);
 var travelTimer;
 window.addEventListener("load", function(){
   travelSlides.showSlides(travelSlides.currSlideIndex);
-  travelTimer = setInterval(function(){travelSlides.plusSlides(1)}, 5000);
+  travelTimer = setInterval(function(){travelSlides.plusSlides(1)}, waitTime);
 })
 
 var musicDots = document.getElementsByClassName("music-dot");
@@ -60,5 +62,5 @@ musicSlides.showSlides(0);
 var musicTimer;
 window.addEventListener("load", function(){
   musicSlides.showSlides(musicSlides.currSlideIndex);
-  musicTimer = setInterval(function(){musicSlides.plusSlides(1)}, 5000);
+  musicTimer = setInterval(function(){musicSlides.plusSlides(1)}, waitTime);
 })
