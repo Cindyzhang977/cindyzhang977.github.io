@@ -30,8 +30,12 @@ function toggleMenu() {
   }
 }
 
-if (screen.width <= 900) {
+if (window.matchMedia('screen and (max-width: 500px)').matches) {
   window.addEventListener("load", function(){
     document.getElementById("main-menu").style.display = "none";
+  })
+} else {
+  window.addEventListener("load", function(){
+    document.getElementById("main-menu").style.display = "flex";
   })
 }
