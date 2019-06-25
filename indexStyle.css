@@ -44,11 +44,6 @@ footer {
   width: 97%;
 }
 
-.line {
-  color: var(--link-color);
-  margin: -10px;
-}
-
 .button {
   background-color: var(--navbar-color);
   border: none;
@@ -129,7 +124,7 @@ a:hover {
   border-radius: 1%;
 }
 
-
+/*mobile*/
 @media only screen and (max-width: 500px) {
   .nav-menu-container, .nav-menu {
     display: inline-block;
@@ -140,8 +135,27 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .menu-icon > span {
+    background: var(--link-color);
+    height: 4px;
+    width: 30px;
+    display: block;
+    margin: 5px;
+    border-radius: 15%;
+  }
+
+  #main-menu {
+    display: flex;
+  }
+
+  #mobile-drop-down {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
+/*desktop*/
 @media only screen and (min-width: 500px) {
   .paragraph {
     flex: 1.5;

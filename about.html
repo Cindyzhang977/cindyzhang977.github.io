@@ -18,10 +18,17 @@
   <!--navigation bar on top-->
   <div class="nav-menu-container">
     <div class="nav-menu">
-      <div class="nav-items">
-        <button class="button" id="name"><a href="/"> Cindy Zhang </a></button>
+      <div id="mobile-drop-down">
+        <div class="nav-items">
+          <button class="button" id="name"><a href="/"> Cindy Zhang </a></button>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
       </div>
-      <div class="nav-items">
+      <div class="nav-items" id="main-menu">
         <button class="button"><a href="/"> Home </a></button>
         <button class="button"><a href="resume.pdf"> Resume </a></button>
         <button class="button"><a href="about.html"> About </a></button>
@@ -174,6 +181,7 @@
   <footer><br></footer>
 
   <script src="slideshow.js"></script>
+  <script src="index.js"></script>
 
 </body>
 </html>
