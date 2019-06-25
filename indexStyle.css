@@ -44,6 +44,11 @@ footer {
   width: 97%;
 }
 
+.line {
+  color: var(--link-color);
+  margin: -10px;
+}
+
 .button {
   background-color: var(--navbar-color);
   border: none;
@@ -126,12 +131,14 @@ a:hover {
 
 
 @media only screen and (max-width: 500px) {
-  .nav-menu-container {
+  .nav-menu-container, .nav-menu {
     display: inline-block;
   }
 
-  .nav-menu {
-    display: inline;
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
