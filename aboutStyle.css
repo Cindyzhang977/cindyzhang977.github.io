@@ -124,7 +124,7 @@ img {
   to {opacity: 1}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 450px) {
   .rev-item {
     flex-wrap: wrap-reverse;
   }
