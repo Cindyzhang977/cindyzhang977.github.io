@@ -130,6 +130,10 @@ img {
     height: 260px;
   }
 
+  p {
+    padding: 4px;
+  }
+
   h {
     padding-right: 200px;
   }
