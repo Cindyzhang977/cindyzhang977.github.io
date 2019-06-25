@@ -125,7 +125,7 @@ a:hover {
 }
 
 /*mobile*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   .nav-menu-container, .nav-menu {
     display: inline-block;
   }
@@ -156,7 +156,7 @@ a:hover {
 }
 
 /*desktop*/
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 900px) {
   .paragraph {
     flex: 1.5;
     margin-left: 50px;
