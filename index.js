@@ -30,7 +30,7 @@ function toggleMenu() {
   }
 }
 
-if (window.matchMedia("screen and (max-width: 500px)").matches) {
+if (window.matchMedia("screen and (max-width: 800px)").matches) {
   window.addEventListener("load", function(){
     document.getElementById("main-menu").style.display = "none";
   })
