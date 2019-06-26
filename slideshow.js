@@ -42,8 +42,15 @@ function autoSlides(slides, slidesType) {
   })
 
   arrows = document.getElementsByClassName(slidesType + "-arrow");
+  dots = document.getElementsByClassName(slidesType + "-dot");
   for (var i = 0; i < arrows.length; i++) {
     arrows[i].addEventListener("click", function(){
+    clearInterval(timer);
+    timer = setInterval(function(){slides.plusSlides(1)}, waitTime);
+    })
+  }
+  for (var i = 0; i < dots.length; i++) {
+    dots[i].addEventListener("click", function(){
     clearInterval(timer);
     timer = setInterval(function(){slides.plusSlides(1)}, waitTime);
     })
