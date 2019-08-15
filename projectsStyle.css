@@ -1,0 +1,33 @@
+:root {
+  --navbar-color: #1c2d37;
+  --link-color: #b4dbdc;
+  --link-complement: #dcbeb4;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 600;
+  width: 400px;
+  padding: 4px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: var(--navbar-color);
+  border-bottom: 2px solid var(--link-complement);
+}
+
+h3 {
+  margin: 7px;
+  color: var(--navbar-color);
+}
+
+ul {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 50px;
+}
+
+.projects-content {
+  margin: 20px 10% 20px 10%;
+}
+
+.project {
+  margin-bottom: 40px;
+}

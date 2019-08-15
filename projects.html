@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Projects</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="indexStyle.css"/>
+    <link rel="stylesheet"
+          type="text/css"
+          href="projectsStyle.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+    <!--navigation bar on top-->
+    <div class="nav-menu-container">
+      <div class="nav-menu">
+        <div id="mobile-drop-down">
+          <div class="nav-items">
+            <button class="button" id="name"><a href="/"> Cindy Zhang </a></button>
+          </div>
+          <div class="menu-icon" onclick="toggleMenu()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+        <div class="nav-items" id="main-menu">
+          <button class="button"><a href="/"> Home </a></button>
+          <button class="button"><a href="resume.pdf"> Resume </a></button>
+          <button class="button"><a href="projects.html"> Projects </a></button>
+          <button class="button"><a href="about.html"> About </a></button>
+        </div>
+      </div>
+    </div>
+
+    <!--content-->
+    <div class="projects-content">
+      <div class="project">
+        <h1>Expense</h1>
+        <h3>React: HTML, CSS, JavaScript</h3>
+        <p>
+            Express is a budgeting web app, where users can manage their finances. <br />
+            Some features include:
+        </p>
+        <ul>
+            <li>Setting monthly spending limits</li>
+            <li>Managing progress towards spending limit</li>
+            <li>Logging transactions</li>
+            <li>Visualizing expense trends</li>
+        </ul>
+        <p>Next steps: Implement server side with Express, Node.js, and MongoDB (MERN stack).</p>
+      </div>
+
+      <div class="project">
+        <h1>2D Maze Game</h1>
+        <h3>Java</h3>
+        <p>
+            Generated random closed worlds with rooms and connecting hallways. <br />
+            Used Prim's algorithm to ensure that all rooms were connected with hallways. <br />
+            Includes a torch feature, displaying only a small radius of the world around the player. <br />
+            Objective of the game was to navigate through the maze to reach a target at the other side.
+        </p>
+      </div>
+
+      <div class="project">
+        <h1>Virtual Reality Research</h1>
+        <h3>Unity3D, C#</h3>
+        <p>
+            Tested whether voice or animations is more responsible for human resemblance of virtual humans. <br />
+            Conducted study with over 100 participants and showcased results in the form of a research paper, poster, and presentation.
+        </p>
+      </div>
+
+      <div class="project">
+        <h1>Tutortime</h1>
+        <p>
+            Bay Area tutoring organization that connects academically talented high school tutors with students, effectively meeting needs for affordable tutoring and job experience.
+        </p>
+      </div>
+    </div>
+  </body>
+
+
+  <footer><br></footer>
+
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="index.js"></script>
+
+</html>
