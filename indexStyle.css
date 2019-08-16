@@ -116,10 +116,7 @@ a:hover {
 }
 
 .paragraph {
-  background-color: #f2f7f7;
-  box-shadow: 0px 2px 8px 0px var(--navbar-color);
   width: 300px;
-  padding: 40px;
   font-size: 15px;
   border-radius: 1%;
 }
