@@ -103,7 +103,7 @@ a:hover {
 }
 
 .social-img {
-  width: 42px;
+  width: 38px;
   margin: 10px;
 }
 
@@ -118,7 +118,6 @@ a:hover {
 .paragraph {
   width: 300px;
   font-size: 15px;
-  border-radius: 1%;
 }
 
 /*mobile*/
@@ -130,7 +129,7 @@ a:hover {
   .nav-items {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
   }
 
   .menu-icon > span {
@@ -157,7 +156,7 @@ a:hover {
   .paragraph {
     flex: 1.5;
     margin-left: 50px;
-    margin-right: 25px;
+    margin-right: 40px;
     width: 450px;
   }
 
