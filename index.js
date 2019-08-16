@@ -30,12 +30,22 @@ function toggleMenu() {
   }
 }
 
+var nav = document.getElementById("main-menu");
+
+window.addEventListener("resize", function(){
+  if (window.matchMedia("screen and (max-width: 800px)").matches) {
+      document.getElementById("main-menu").style.display = "none";
+    } else {
+      document.getElementById("main-menu").style.display = "block";
+    }
+});
+
 if (window.matchMedia("screen and (max-width: 800px)").matches) {
   window.addEventListener("load", function(){
-    document.getElementById("main-menu").style.display = "none";
+    nav.style.display = "none";
   })
 } else {
   window.addEventListener("load", function(){
-    document.getElementById("main-menu").style.display = "flex";
+    nav.style.display = "flex";
   })
 }
