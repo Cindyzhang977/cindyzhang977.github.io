@@ -35,3 +35,19 @@ p, ul {
 .project {
   margin-bottom: 40px;
 }
+
+.expense-imgs > img {
+  margin-top: 35px;
+  width: 400px;
+}
+
+#expense {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+  #expense {
+    flex-direction: column;
+  }
+}
