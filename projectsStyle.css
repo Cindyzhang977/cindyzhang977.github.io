@@ -38,6 +38,7 @@ p, ul {
 
 .expense-imgs > img {
   margin-top: 35px;
+  margin-bottom: 15px;
   width: 400px;
 }
 
@@ -45,18 +46,12 @@ p, ul {
   width: 150px;
   padding: 5px;
   border-radius: 5px;
-  border: 2px solid var(--navbar-color);
-  background-color: white;
-  color: var(--navbar-color);
-  margin: 10px;
-  margin-left: 35px;
-  font-weight: 600;
-}
-
-.code-button {
   border: 2px solid var(--link-complement);
   background-color: var(--link-complement);
   color: white;
+  margin: 10px;
+  margin-left: 35px;
+  font-weight: 600;
 }
 
 .code-button:hover {
@@ -64,12 +59,6 @@ p, ul {
   color: var(--link-complement);
   background-color: white;
 }
-
-/* .code-button:hover {
-  cursor: pointer;
-  border-color: var(--link-complement);
-  color: var(--link-complement);
-} */
 
 #expense {
   margin-top: 35px;
