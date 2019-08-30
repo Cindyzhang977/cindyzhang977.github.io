@@ -36,7 +36,7 @@ p, ul {
   margin-bottom: 40px;
 }
 
-.expense-imgs > img {
+.proj-img > img {
   margin-top: 35px;
   margin-bottom: 15px;
   width: 400px;
@@ -60,18 +60,18 @@ p, ul {
   background-color: white;
 }
 
-#expense {
+.proj-with-img {
   margin-top: 35px;
   display: flex;
   justify-content: space-between;
 }
 
 @media only screen and (max-width: 800px) {
-  #expense {
+  .proj-with-img {
     flex-direction: column;
   }
 
-  .expense-imgs > img {
+  .proj-img > img {
     width: 350px;
   }
 }
